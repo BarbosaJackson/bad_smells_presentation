@@ -171,12 +171,13 @@ public class Cliente extends Pessoa {
 	private String endereco;
 	private Double totalCompras;
 
-	public Cliente(String endereco, Double totalCompras, String nome, String usuario, String senha, Integer codigo) {
+	public Cliente(String endereco, Double totalCompras, String nome,
+		String usuario, String senha, Integer codigo) {
 		super(nome, usuario, senha, codigo);
 		this.endereco = endereco;
 		this.totalCompras = totalCompras;
 	}
-
+ 
 	public String getEndereco() {
 		return this.endereco;
 	}
@@ -190,7 +191,8 @@ public class Funcionario extends Pessoa {
 	private String endereco;
 	private Double salario, totalVendas;
 
-	public Funcionario(String endereco, Double salario, Double totalVendas, String nome, String usuario, String senha, Integer codigo) {
+	public Funcionario(String endereco, Double salario, Double totalVendas, 
+	String nome, String usuario, String senha, Integer codigo) {
 		super(nome, usuario, senha, codigo);
 		this.endereco = endereco;
 		this.salario = salario;
