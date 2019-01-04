@@ -263,7 +263,8 @@ public class Pessoa {
 public class Cliente extends Pessoa {
 	private Double totalCompras;
 
-	public Cliente(String endereco, Double totalCompras, String nome, String usuario, String senha, Integer codigo) {
+	public Cliente(String endereco, Double totalCompras, String nome,
+		String usuario, String senha, Integer codigo) {
 		super(endereco, nome, usuario, senha, codigo);
 		this.endereco = endereco;
 		this.totalCompras = totalCompras;
@@ -277,7 +278,8 @@ public class Cliente extends Pessoa {
 public class Funcionario extends Pessoa { 
 	private Double salario, totalVendas;
 
-	public Funcionario(String endereco, Double salario, Double totalVendas, String nome, String usuario, String senha, Integer codigo) {
+	public Funcionario(String endereco, Double salario, Double totalVendas,
+		String nome, String usuario, String senha, Integer codigo) {
 		super(endereco, nome, usuario, senha, codigo);
 		this.endereco = endereco;
 		this.salario = salario;
