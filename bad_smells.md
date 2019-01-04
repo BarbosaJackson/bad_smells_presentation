@@ -116,13 +116,15 @@ int sum_elements_array(int *array, int size_arr) {
 }
 
 int main(int argc, char const *argv[]) {
-	int arrayA[10], arrayB[15];
+	int arrayA[10], arrayB[15], sum;
 	
 	read_array(arrayA, 10);
 	read_array(arrayB, 15);
+	sum = sum_elements_array(arrayA, 10);
+	cout << "The sum of elements in arrayA are " << sum << endl;
 	
-	cout << "The sum of elements in arrayA are " << sum_elements_array(arrayA, 10) << endl;
-	cout << "The sum of elements in arrayB are " << sum_elements_array(arrayB, 15) << endl;
+	sum = sum_elements_array(arrayB, 15);
+	cout << "The sum of elements in arrayB are " << sum << endl;
 
 	return 0;
 }
